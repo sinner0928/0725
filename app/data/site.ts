@@ -59,7 +59,7 @@ export const navItems: NavItem[] = [
     path: '/manufacturing',
     children: [
       { key: 'production', label: { zh: '生产服务', en: 'Production' }, path: '/manufacturing#production', description: { zh: '打样、试产、量产、出货', en: 'Samples, pilot run, mass production and shipment' } },
-      { key: 'process', label: { zh: '工艺流程', en: 'Process' }, path: '/manufacturing#process', description: { zh: '芯片模组制造流程', en: 'Chip and module manufacturing process' } },
+      { key: 'process', label: { zh: '工艺流程', en: 'Process' }, path: '/manufacturing#process', description: { zh: 'PCBA 制程节点', en: 'PCBA process steps' } },
       { key: 'testing', label: { zh: '测试与交付', en: 'Testing & Delivery' }, path: '/manufacturing#testing', description: { zh: '测试标准与质检流程', en: 'Testing standards and QC flow' } }
     ]
   },
@@ -101,7 +101,7 @@ export const pages = {
     company: {
       title: { zh: '公司简介', en: 'Company Introduction' },
       eyebrow: { zh: '关于壹原理科技', en: 'About YiYuanLi' },
-      description: { zh: '电子板卡与无线通信模块制造企业', en: 'Electronic board and wireless module manufacturer' },
+      description: { zh: 'PCBA 制造与成品组装企业', en: 'PCBA manufacturing and finished product assembly provider' },
       image: '',
       sections: [
         {
@@ -109,7 +109,7 @@ export const pages = {
           eyebrow: { zh: '企业概况', en: 'Overview' },
           title: { zh: '从图纸到良品出货的制造中间环节。', en: 'The manufacturing link between drawings and qualified shipment.' },
           paragraphs: [
-            { zh: '壹原理科技是一家电子板卡与无线通信模块制造企业。总部杭州，深圳负责量产与供应链，上海负责协议栈与射频研发。', en: 'YiYuanLi is an electronic board and wireless communication module manufacturer. Headquartered in Hangzhou, with production and supply chain in Shenzhen, protocol stack and RF R&D in Shanghai.' },
+            { zh: '壹原理科技是一家 PCBA 制造与成品组装企业。总部杭州，深圳负责量产与供应链，上海负责固件开发与无线性能测试。', en: 'YiYuanLi is a PCBA manufacturing and finished product assembly provider. Headquartered in Hangzhou, with production and supply chain in Shenzhen, firmware development and wireless performance testing in Shanghai.' },
             { zh: '产品方向包括键鼠外设控制板、运动相机遥控器、充电宝通信模块、定制板卡加工。不做方案设计，不做品牌成品，只做从图纸到良品出货的中间制造环节。', en: 'Product directions include keyboard/mouse control boards, action camera remotes, power bank communication modules, and custom PCBA. No design services, no branded products — only the manufacturing link from drawings to qualified shipment.' }
           ]
         }
@@ -284,7 +284,7 @@ export const pages = {
           eyebrow: { zh: '制程说明', en: 'Process Steps' },
           title: { zh: '四个节点，每个都可追踪。', en: 'Four steps, each traceable.' },
           items: [
-            { title: { zh: '规格确认', en: 'Specification Confirmation' }, text: { zh: '根据客户需求确定芯片选型、接口定义、功耗目标和射频参数。', en: 'Define chip selection, interfaces, power targets and RF parameters based on client requirements.' } },
+            { title: { zh: '规格确认', en: 'Specification Confirmation' }, text: { zh: '对齐 BOM 清单、PCB 工艺要求、测试项和验收标准。', en: 'Align BOM list, PCB process requirements, test items and acceptance criteria.' } },
             { title: { zh: '参考设计', en: 'Reference Design' }, text: { zh: '基于选定方案开发参考设计、射频匹配和 PCB 布局，完成工程验证。', en: 'Develop reference design, RF matching and PCB layout based on selected solution, complete engineering validation.' } },
             { title: { zh: '试产固化', en: 'Pilot Run & Process Lock' }, text: { zh: '小批量试产，固化 SMT 工艺参数、测试规范和验收标准。', en: 'Small-batch pilot to lock SMT process parameters, test specs and acceptance criteria.' } },
             { title: { zh: '量产品控', en: 'Production & Quality Control' }, text: { zh: '按固化工艺批量制造，持续监控良率和出货品质。', en: 'Mass production per locked process, continuous yield and shipment quality monitoring.' } }
@@ -326,7 +326,7 @@ export const pages = {
           items: [
             { title: { zh: '杭州总部', en: 'Hangzhou Headquarters' }, text: { zh: '公司运营、客户沟通与项目统筹', en: 'Operations, client communication and project coordination' } },
             { title: { zh: '深圳量产中心', en: 'Shenzhen Production Center' }, text: { zh: '量产制造与供应链管理，详细地址通过业务咨询获取', en: 'Production and supply chain management. Detailed address via business inquiry' } },
-            { title: { zh: '上海研发中心', en: 'Shanghai R&D Center' }, text: { zh: '无线通信协议栈与射频方向研发协同', en: 'Wireless protocol stack and RF R&D collaboration' } },
+            { title: { zh: '上海研发中心', en: 'Shanghai R&D Center' }, text: { zh: '固件开发、无线性能测试与客户工程对接', en: 'Firmware development, wireless performance testing and client engineering support' } },
             { title: { zh: '工作时间', en: 'Business Hours' }, text: { zh: '工作日 09:00 - 18:00', en: 'Weekdays 09:00 - 18:00' } }
           ]
         }

@@ -2,12 +2,12 @@
 const { locale } = useI18n()
 
 const capabilityStats = computed(() => locale.value === 'en' ? [
-  { value: 'Batch', label: 'Chip & module shipment', note: 'Capacity confirmed by project plan' },
+  { value: 'Batch', label: 'PCBA batch shipment', note: 'Capacity confirmed by project plan' },
   { value: '4', label: 'Product line structure', note: 'Keyboard/mouse, action camera remote, power bank module and custom PCBA' },
   { value: '3', label: 'R&D / production cities', note: 'Hangzhou, Shenzhen and Shanghai' },
   { value: 'Full Flow', label: 'Manufacturing support', note: 'Sample, pilot run, production and QC shipment' }
 ] : [
-  { value: '批量', label: '芯片模组出货', note: '产能按项目计划确认' },
+  { value: '批量', label: 'PCBA 批量出货', note: '产能按项目计划确认' },
   { value: '4', label: '产品线结构', note: '键鼠外设、运动相机遥控、充电宝模块、定制板卡' },
   { value: '3 城', label: '研发与量产协同', note: '杭州、深圳、上海联动' },
   { value: '全流程', label: '制造交付支持', note: '打样、试产、量产、质检出货' }

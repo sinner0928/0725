@@ -21,8 +21,8 @@ const route = useRoute()
 
 const pageTitle: LocaleText = { zh: '关于我们', en: 'About Us' }
 const pageDescription: LocaleText = {
-  zh: '电子板卡与无线通信模块制造企业，覆盖研发协同、供应链对接与量产交付。',
-  en: 'An electronic board and wireless module manufacturer covering engineering coordination, supply chain and production delivery.'
+  zh: 'PCBA 制造与成品组装企业，覆盖工程协同、供应链对接与量产交付。',
+  en: 'A PCBA manufacturing and finished product assembly provider covering engineering coordination, supply chain and production delivery.'
 }
 
 usePageSeo(pageTitle, pageDescription)
@@ -39,8 +39,8 @@ const sections = [
 
 const companyParagraphs: LocaleText[] = [
   {
-    zh: '壹原理科技专注电子板卡与无线通信模块制造。以杭州为运营协同中心，联动深圳量产与供应链、上海工程研发资源，服务产品从样品到批量交付的全过程。',
-    en: 'YiYuanLi focuses on electronic board and wireless communication module manufacturing. Hangzhou coordinates operations, with Shenzhen supporting production and supply chain while Shanghai provides engineering R&D resources.'
+    zh: '壹原理科技专注 PCBA 制造与成品组装。以杭州为运营协同中心，联动深圳量产与供应链、上海工程研发资源，服务产品从样品到批量交付的全过程。',
+    en: 'YiYuanLi focuses on PCBA manufacturing and finished product assembly. Hangzhou coordinates operations, with Shenzhen supporting production and supply chain while Shanghai provides engineering R&D resources.'
   },
   {
     zh: '我们不销售标准化成品，而是围绕客户的产品定义、工艺要求与交付节奏，组织可验证、可追溯的制造服务。',

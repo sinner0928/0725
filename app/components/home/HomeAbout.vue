@@ -6,12 +6,12 @@ const localePath = useLocalePath()
 const aboutImage = '/assets/gongsi.jpg'
 
 const aboutValues = computed(() => locale.value === 'en' ? [
-  { subtitle: 'Scale Capability', text: 'Batch delivery for chips and modules, with capacity and schedule confirmed by project plan.', icon: CheckCircle2 },
-  { subtitle: 'Full-Flow Manufacturing', text: 'From chip specification and reference design to engineering validation and production delivery.', icon: PackageCheck },
+  { subtitle: 'Scale Capability', text: 'Batch delivery for PCBA and finished products, with capacity and schedule confirmed by project plan.', icon: CheckCircle2 },
+  { subtitle: 'Full-Flow Manufacturing', text: 'From BOM confirmation and process assessment to engineering sampling and production delivery.', icon: PackageCheck },
   { subtitle: 'Quality Assurance', text: 'Functional tests, RF calibration, reliability validation and shipment inspection by product type.', icon: ShieldCheck }
 ] : [
-  { subtitle: '规模产能', text: '支持芯片与模组批量交付，产能与排期按项目计划确认。', icon: CheckCircle2 },
-  { subtitle: '全链路制造', text: '从芯片规格、参考设计到工程验证和量产交付全流程贯通。', icon: PackageCheck },
+  { subtitle: '规模产能', text: '支持 PCBA 与成品批量交付，产能与排期按项目计划确认。', icon: CheckCircle2 },
+  { subtitle: '全链路制造', text: '从 BOM 确认、工艺评估到工程打样和量产交付全流程贯通。', icon: PackageCheck },
   { subtitle: '品质保障', text: '按产品类型执行功能测试、射频校准、可靠性验证与出货检验。', icon: ShieldCheck }
 ])
 </script>
@@ -24,8 +24,8 @@ const aboutValues = computed(() => locale.value === 'en' ? [
       </div>
       <div class="home-about-copy">
         <p class="eyebrow">{{ locale === 'en' ? 'About YiYuanLi' : '关于壹原理' }}</p>
-        <h2>{{ locale === 'en' ? 'A manufacturer from chip design to module production.' : '从芯片设计到模组量产的制造商。' }}</h2>
-        <p>{{ locale === 'en' ? 'YiYuanLi focuses on Bluetooth SoC, 2.4G RF, NFC and multi-protocol chip modules. The company links product definition, reference design, engineering validation, pilot run and batch shipment into a clear delivery path.' : '壹原理科技覆盖蓝牙 SoC、2.4G 射频、NFC 及多协议芯片模组的研发设计与量产制造。公司将产品定义、参考设计、工程验证、试产确认和批量出货串联成清晰的交付路径。' }}</p>
+        <h2>{{ locale === 'en' ? 'A manufacturer from PCBA sampling to finished product batch shipment.' : '从 PCBA 打样到成品批量出货的制造商。' }}</h2>
+        <p>{{ locale === 'en' ? 'YiYuanLi focuses on keyboard/mouse control boards, camera remotes, power bank modules and custom PCBA. The company links BOM confirmation, process assessment, engineering validation, pilot run and batch shipment into a clear delivery path.' : '壹原理科技覆盖键鼠控制板、相机遥控器、充电宝通信模块与定制板卡的 PCBA 加工与成品组装。公司将 BOM 确认、工艺评估、工程验证、试产确认和批量出货串联成清晰的交付路径。' }}</p>
         <NuxtLink class="button" :to="localePath('/about/company')">{{ locale === 'en' ? 'View Details' : '查看详情' }} <ArrowRight :size="17" /></NuxtLink>
       </div>
     </div>
