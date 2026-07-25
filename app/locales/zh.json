@@ -1,0 +1,21 @@
+{
+  "siteName": "壹原理科技",
+  "cta": {
+    "inquiry": "提交需求",
+    "contact": "联系我们",
+    "search": "搜索"
+  },
+  "footer": {
+    "summary": "壹原理科技 - 无线连接芯片与模组制造商，覆盖蓝牙、2.4G、NFC 等核心方向，从设计到量产提供全链路支持。",
+    "follow": "关注我们",
+    "rights": "版权所有",
+    "record": "ICP备案号",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  },
+  "form": {
+    "success": "信息已记录，我们会根据实际情况安排后续沟通。",
+    "required": "请填写必填信息。",
+    "invalidEmail": "请输入有效邮箱地址。"
+  }
+}
