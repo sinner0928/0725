@@ -75,6 +75,17 @@ export const navItems: NavItem[] = [
 ]
 
 export const defaultChildRoutes: Record<string, string> = {
+  '/about/company': '/about',
+  '/about/business': '/about',
+  '/about/culture': '/about',
+  '/products/detail': '/products',
+  '/products/scenarios': '/products',
+  '/products/inquiry': '/products',
+  '/manufacturing/production': '/manufacturing',
+  '/manufacturing/process': '/manufacturing',
+  '/manufacturing/testing': '/manufacturing',
+  '/contact/info': '/contact',
+  '/contact/inquiry': '/contact'
 }
 
 export const validRoutes = new Set([
@@ -110,7 +121,7 @@ export const pages = {
           title: { zh: '从图纸到良品出货的制造中间环节。', en: 'The manufacturing link between drawings and qualified shipment.' },
           paragraphs: [
             { zh: '壹原理科技是一家 PCBA 制造与成品组装企业。总部杭州，深圳负责量产与供应链，上海负责固件开发与无线性能测试。', en: 'YiYuanLi is a PCBA manufacturing and finished product assembly provider. Headquartered in Hangzhou, with production and supply chain in Shenzhen, firmware development and wireless performance testing in Shanghai.' },
-            { zh: '产品方向包括键鼠外设控制板、运动相机遥控器、充电宝通信模块、定制板卡加工。不做方案设计，不做品牌成品，只做从图纸到良品出货的中间制造环节。', en: 'Product directions include keyboard/mouse control boards, action camera remotes, power bank communication modules, and custom PCBA. No design services, no branded products — only the manufacturing link from drawings to qualified shipment.' }
+            { zh: '产品方向包括键鼠外设控制板、运动相机遥控器、充电宝蓝牙小模块、定制板卡加工。不做方案设计，不做品牌成品，只做从图纸到良品出货的中间制造环节。', en: 'Product directions include keyboard/mouse control boards, action camera remotes, power bank Bluetooth mini modules, and custom PCBA. No design services, no branded products — only the manufacturing link from drawings to qualified shipment.' }
           ]
         }
       ]
@@ -128,7 +139,7 @@ export const pages = {
           items: [
             { title: { zh: '键鼠外设控制板', en: 'Keyboard & Mouse Control Boards' }, text: { zh: '蓝牙/2.4G 双模，按键矩阵设计、主控适配、低功耗优化、固件烧录、整板功能测试。', en: 'Bluetooth/2.4G dual-mode. Key matrix design, MCU adaptation, low-power optimization, firmware flashing, full-board functional testing.' } },
             { title: { zh: '运动相机遥控器', en: 'Action Camera Remotes' }, text: { zh: '远程快门、模式切换、低功耗待机、按键自定义。样机调试到量产导入全程跟进。', en: 'Remote shutter, mode switching, low-power standby, custom key mapping. Full coverage from prototype debugging to mass production introduction.' } },
-            { title: { zh: '充电宝通信模块', en: 'Power Bank Communication Modules' }, text: { zh: '蓝牙/WiFi/串口透传、电量采集、状态上报、APP 交互通信。', en: 'Bluetooth/WiFi/UART pass-through, battery data collection, status upload, app communication.' } },
+            { title: { zh: '充电宝蓝牙小模块', en: 'Power Bank Bluetooth Mini Modules' }, text: { zh: '面向充电宝与移动电源场景，支持蓝牙通信、电量状态采集、设备状态上报与整机联调。', en: 'For power bank and portable power scenarios, supporting Bluetooth communication, battery status collection, device status upload and product-level tuning.' } },
             { title: { zh: '定制电子板卡加工', en: 'Custom Electronic Board Assembly' }, text: { zh: 'PCB 制板、SMT 贴片、DIP 插件焊接、程序烧录、功能测试。一单到底。', en: 'PCB fabrication, SMT mounting, DIP soldering, firmware flashing, functional testing. One order, end to end.' } }
           ]
         }
@@ -193,14 +204,14 @@ export const pages = {
             },
             {
               category: { zh: '通信模块类', en: 'Communication Module' },
-              title: { zh: '充电宝 APP 上传模块', en: 'Power Bank App-Upload Module' },
-              text: { zh: '面向共享充电宝、移动电源及智能供电设备。蓝牙/WiFi/串口透传、电量采集、设备状态上传与 APP 交互通信。', en: 'For shared power banks, portable power supplies and smart power devices. Bluetooth/WiFi/UART pass-through, battery data collection, status upload and app communication.' },
+              title: { zh: '充电宝蓝牙小模块', en: 'Power Bank Bluetooth Mini Module' },
+              text: { zh: '面向共享充电宝、移动电源及智能供电设备。支持蓝牙通信、电量采集、设备状态上传与整机联调。', en: 'For shared power banks, portable power supplies and smart power devices. Supports Bluetooth communication, battery data collection, device status upload and product-level tuning.' },
               image: images.generalWireless,
               tags: [{ zh: 'APP上传', en: 'App upload' }, { zh: '状态采集', en: 'Status capture' }, { zh: '蓝牙透传', en: 'Bluetooth pass-through' }],
               specs: [
                 { label: { zh: '适用产品', en: 'Products' }, value: { zh: '共享充电宝 / 移动电源 / 智能供电设备', en: 'Shared power bank / portable power supply / smart power device' } },
-                { label: { zh: '核心能力', en: 'Core Capability' }, value: { zh: '电量采集、状态上报、APP通信与透传控制', en: 'Battery data collection, status upload, app communication and pass-through control' } },
-                { label: { zh: '交付形态', en: 'Delivery Form' }, value: { zh: '通信模块 PCBA + 烧录测试 + 量产导入', en: 'Communication module PCBA + flashing test + production introduction' } }
+                { label: { zh: '核心能力', en: 'Core Capability' }, value: { zh: '蓝牙通信、电量采集、状态上报与整机联调', en: 'Bluetooth communication, battery data collection, status upload and product-level tuning' } },
+                { label: { zh: '交付形态', en: 'Delivery Form' }, value: { zh: '蓝牙小模块 PCBA + 烧录测试 + 量产导入', en: 'Bluetooth mini module PCBA + flashing test + production introduction' } }
               ]
             },
             {
@@ -232,7 +243,7 @@ export const pages = {
           items: [
             { title: { zh: '办公 / 电竞外设', en: 'Office & Gaming Peripherals' }, text: { zh: '键盘、鼠标和定制外设的控制板方案，蓝牙/2.4G 连接、按键矩阵、低功耗优化、程序烧录与整板测试。', en: 'Control board solutions for keyboards, mice and custom peripherals. Bluetooth/2.4G, key matrix, low-power tuning, firmware flashing and full-board testing.' }, metric: '01', tags: [{ zh: '键鼠外设控制板', en: 'Keyboard/mouse control boards' }] },
             { title: { zh: '运动相机 / 户外拍摄', en: 'Action Camera / Outdoor Shooting' }, text: { zh: '运动相机遥控器和影像辅助设备方案。远程快门、模式切换、无线通信、按键控制与量产导入。', en: 'Solutions for action camera remotes and imaging accessories. Remote shutter, mode switching, wireless communication, key control and production introduction.' }, metric: '02', tags: [{ zh: '运动相机遥控器', en: 'Action camera remote' }] },
-            { title: { zh: '共享充电宝 / 移动电源', en: 'Shared Power Bank / Portable Power' }, text: { zh: '充电宝 APP 上传模块方案。蓝牙/WiFi/串口透传、电量采集、状态上传与 APP 交互通信。', en: 'Power bank app-upload module solutions. Bluetooth/WiFi/UART pass-through, battery data collection, status upload and app communication.' }, metric: '03', tags: [{ zh: '充电宝通信模块', en: 'Power bank communication module' }] },
+            { title: { zh: '共享充电宝 / 移动电源', en: 'Shared Power Bank / Portable Power' }, text: { zh: '充电宝蓝牙小模块方案。支持蓝牙通信、电量采集、状态上传与整机联调。', en: 'Power bank Bluetooth mini module solutions. Supports Bluetooth communication, battery data collection, status upload and product-level tuning.' }, metric: '03', tags: [{ zh: '充电宝蓝牙小模块', en: 'Power bank Bluetooth mini module' }] },
             { title: { zh: '消费电子 / 智能硬件', en: 'Consumer Electronics / Smart Hardware' }, text: { zh: '定制板卡加工方案。PCB 优化、元器件采购、SMT 贴片、插件焊接、程序烧录与功能测试。', en: 'Custom PCBA solutions. PCB optimization, component sourcing, SMT mounting, DIP soldering, firmware flashing and functional testing.' }, metric: '04', tags: [{ zh: '定制 PCBA 加工', en: 'Custom PCBA assembly' }] }
           ]
         }

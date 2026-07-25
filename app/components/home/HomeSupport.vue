@@ -39,7 +39,7 @@ const supportSteps = computed(() => locale.value === 'en' ? [
           <strong>{{ locale === 'en' ? 'Have a product requirement? Submit project information for follow-up.' : '有产品需求？提交信息，我们会根据产品方向和预计数量安排后续对接。' }}</strong>
           <span>{{ locale === 'en' ? 'Share product direction, sample status, expected quantity and delivery target to start a focused conversation.' : '建议说明产品方向、样品状态、预计数量和交付目标，便于工程与商务快速判断。' }}</span>
         </div>
-        <NuxtLink :to="localePath('/contact/inquiry')" class="button">{{ t('cta.contact') }} <ArrowRight :size="17" /></NuxtLink>
+        <NuxtLink :to="localePath('/contact')" class="button">{{ t('cta.contact') }} <ArrowRight :size="17" /></NuxtLink>
       </div>
     </div>
   </section>

@@ -17,12 +17,12 @@ const sections = [
 const products = [
   { icon: CircuitBoard, title: { zh: '键鼠外设控制板', en: 'Keyboard & Mouse Control Board' }, text: { zh: '蓝牙 / 2.4G 双模，覆盖按键矩阵、主控适配、低功耗优化与整板测试。', en: 'Bluetooth / 2.4G with key matrix, MCU adaptation, low-power tuning and board testing.' }, tags: ['Bluetooth / 2.4G', 'PCBA'] },
   { icon: Radio, title: { zh: '运动相机遥控器', en: 'Action Camera Remote' }, text: { zh: '远程快门、模式切换、无线通信、按键控制与样品验证。', en: 'Remote shutter, mode switching, wireless communication, key control and sample validation.' }, tags: [{ zh: '无线控制', en: 'Wireless control' }, { zh: '量产导入', en: 'Production intro' }] },
-  { icon: BatteryCharging, title: { zh: '充电宝通信模块', en: 'Power Bank Communication Module' }, text: { zh: '电量采集、状态上报、蓝牙 / WiFi / 串口通信与 APP 交互。', en: 'Battery data, status reporting, Bluetooth / WiFi / UART and app communication.' }, tags: [{ zh: '状态采集', en: 'Data capture' }, { zh: '模块 PCBA', en: 'Module PCBA' }] },
+  { icon: BatteryCharging, title: { zh: '充电宝蓝牙小模块', en: 'Power Bank Bluetooth Mini Module' }, text: { zh: '蓝牙通信、电量采集、状态上报与整机联调。', en: 'Bluetooth communication, battery data collection, status reporting and product-level tuning.' }, tags: [{ zh: '状态采集', en: 'Data capture' }, { zh: '模块 PCBA', en: 'Module PCBA' }] },
   { icon: Layers3, title: { zh: '定制电子板卡加工', en: 'Custom Electronic Board Assembly' }, text: { zh: '从 PCB 制板、SMT 贴片到烧录、测试，按项目资料组织交付。', en: 'From PCB fabrication and SMT to flashing and testing, organized around project documentation.' }, tags: ['SMT', { zh: '功能测试', en: 'Functional test' }] }
 ]
 const scenarios = [
   { number: '01', title: { zh: '办公与电竞外设', en: 'Office & Gaming Peripherals' }, text: { zh: '面向键盘、鼠标与定制外设的连接、控制与低功耗需求。', en: 'Connectivity, control and low-power support for keyboards, mice and custom peripherals.' } },
-  { number: '02', title: { zh: '运动相机与影像辅助', en: 'Action Camera & Imaging' }, text: { zh: '面向便携遥控、模式控制与无线交互的工程需求。', en: 'Engineering support for compact remotes, mode control and wireless interaction.' } },
+  { number: '02', title: { zh: '影像周边设备', en: 'Imaging Peripheral Devices' }, text: { zh: '面向便携遥控、模式控制与无线交互的工程需求。', en: 'Engineering support for compact remotes, mode control and wireless interaction.' } },
   { number: '03', title: { zh: '共享充电与移动电源', en: 'Shared Power & Portable Power' }, text: { zh: '面向设备状态采集、通信透传与应用交互。', en: 'Device data, pass-through communication and application interaction.' } },
   { number: '04', title: { zh: '消费电子与智能硬件', en: 'Consumer Electronics & Smart Hardware' }, text: { zh: '面向定制板卡、工艺导入与批量制造。', en: 'Custom boards, process introduction and batch manufacturing.' } }
 ]

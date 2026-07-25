@@ -25,8 +25,8 @@ const aboutValues = computed(() => locale.value === 'en' ? [
       <div class="home-about-copy">
         <p class="eyebrow">{{ locale === 'en' ? 'About YiYuanLi' : '关于壹原理' }}</p>
         <h2>{{ locale === 'en' ? 'A manufacturer from PCBA sampling to finished product batch shipment.' : '从 PCBA 打样到成品批量出货的制造商。' }}</h2>
-        <p>{{ locale === 'en' ? 'YiYuanLi focuses on keyboard/mouse control boards, camera remotes, power bank modules and custom PCBA. The company links BOM confirmation, process assessment, engineering validation, pilot run and batch shipment into a clear delivery path.' : '壹原理科技覆盖键鼠控制板、相机遥控器、充电宝通信模块与定制板卡的 PCBA 加工与成品组装。公司将 BOM 确认、工艺评估、工程验证、试产确认和批量出货串联成清晰的交付路径。' }}</p>
-        <NuxtLink class="button" :to="localePath('/about/company')">{{ locale === 'en' ? 'View Details' : '查看详情' }} <ArrowRight :size="17" /></NuxtLink>
+        <p>{{ locale === 'en' ? 'YiYuanLi focuses on keyboard/mouse control boards, camera remotes, power bank Bluetooth mini modules and custom PCBA. The company links BOM confirmation, process assessment, engineering validation, pilot run and batch shipment into a clear delivery path.' : '壹原理科技覆盖键鼠控制板、相机遥控器、充电宝蓝牙小模块与定制板卡的 PCBA 加工与成品组装。公司将 BOM 确认、工艺评估、工程验证、试产确认和批量出货串联成清晰的交付路径。' }}</p>
+        <NuxtLink class="button" :to="localePath('/about')">{{ locale === 'en' ? 'View Details' : '查看详情' }} <ArrowRight :size="17" /></NuxtLink>
       </div>
     </div>
 

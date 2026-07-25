@@ -11,7 +11,7 @@ const productLineTiles = computed(() => productItems.slice(0, 4).map((item, inde
   subtitle: localeText(item.title, locale.value),
   description: localeText(item.text, locale.value),
   tags: item.tags.map((tag) => localeText(tag, locale.value)),
-  image: index === 2 ? '/assets/chongdianbao.jpg' : index === 3 ? '/assets/xinpian1.jpg' : item.image,
+  image: index === 2 ? '/assets/xiaomode.jpg' : index === 3 ? '/assets/xinpian1.jpg' : item.image,
   className: `tile-${index + 1}`
 })))
 </script>
@@ -24,8 +24,8 @@ const productLineTiles = computed(() => productItems.slice(0, 4).map((item, inde
         <h2>{{ locale === 'en' ? 'Core PCBA Solutions' : '核心产品与PCBA方案' }}</h2>
         <p class="home-products-lead">
           {{ locale === 'en'
-            ? 'Focused on keyboard/mouse peripherals, action camera remotes, power bank communication modules and custom electronic board assembly, with support from PCB optimization to PCBA production delivery.'
-            : '聚焦键鼠外设、运动相机遥控、充电宝通信模块及定制电子板卡加工，提供从PCB优化、SMT贴片、程序烧录到测试交付的一站式PCBA服务。'
+            ? 'Focused on keyboard/mouse peripherals, action camera remotes, power bank Bluetooth mini modules and custom electronic board assembly, with support from PCB optimization to PCBA production delivery.'
+            : '聚焦键鼠外设、运动相机遥控、充电宝蓝牙小模块及定制电子板卡加工，提供从 PCB 优化、SMT 贴片、程序烧录到测试交付的一站式 PCBA 服务。'
           }}
         </p>
       </div>
@@ -35,7 +35,7 @@ const productLineTiles = computed(() => productItems.slice(0, 4).map((item, inde
         :key="product.title"
         class="home-product-tile"
         :class="product.className"
-        :to="localePath('/products/detail')"
+        :to="localePath('/products')"
       >
         <div class="home-product-media">
           <img :src="product.image" :alt="product.title" loading="lazy" />

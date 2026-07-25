@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Building2, CheckCircle2, ClipboardList, Clock3, Factory, Globe2, Mail, MapPin, PhoneCall, Radio, Send } from 'lucide-vue-next'
+import { Building2, CheckCircle2, ClipboardList, Clock3, Factory, Globe2, Radio, Send } from 'lucide-vue-next'
 import { type LocaleText, usePageSeo } from '~/data/site'
 
 const { locale } = useI18n()
@@ -153,11 +153,6 @@ function submitInquiry() {
               </li>
             </ul>
 
-            <div class="quick-contact">
-              <p><PhoneCall :size="18" aria-hidden="true" />0755-81766802</p>
-              <p><Mail :size="18" aria-hidden="true" />sales@kmpcba.com</p>
-              <p><MapPin :size="18" aria-hidden="true" />{{ locale === 'en' ? 'Dongguan / Shenzhen / Shanghai' : '东莞 / 深圳 / 上海' }}</p>
-            </div>
           </aside>
 
           <form class="business-form" novalidate @submit.prevent="submitInquiry">
@@ -357,23 +352,6 @@ function submitInquiry() {
   border: 1px solid rgba(255,255,255,0.82);
   border-radius: 50%;
   color: rgba(255,255,255,0.9);
-}
-
-.quick-contact {
-  display: grid;
-  gap: 10px;
-  margin-top: 30px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(255,255,255,0.16);
-}
-
-.quick-contact p {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 0;
-  color: rgba(255,255,255,0.86);
-  font-size: 14px;
 }
 
 .business-form {

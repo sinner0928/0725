@@ -65,7 +65,7 @@ const layoutNodes = [
 const businessCards = [
   { title: { zh: '键鼠外设控制板', en: 'Keyboard & Mouse Control Boards' }, text: { zh: '蓝牙 / 2.4G 双模、按键矩阵、主控适配、低功耗优化与整板测试。', en: 'Bluetooth / 2.4G, key matrix, MCU adaptation, low-power tuning and board testing.' }, tags: [{ zh: '无线连接', en: 'Wireless' }, { zh: '功能测试', en: 'Board testing' }] },
   { title: { zh: '运动相机遥控器', en: 'Action Camera Remotes' }, text: { zh: '远程快门、模式切换、低功耗待机、按键自定义与量产导入。', en: 'Remote shutter, mode switching, low-power standby, key mapping and production introduction.' }, tags: [{ zh: '控制固件', en: 'Control firmware' }, { zh: '样品验证', en: 'Sample validation' }] },
-  { title: { zh: '充电宝通信模块', en: 'Power Bank Communication Modules' }, text: { zh: '蓝牙 / WiFi / 串口透传、电量采集、状态上报与 APP 交互通信。', en: 'Bluetooth / WiFi / UART, battery data collection, status reporting and app communication.' }, tags: [{ zh: '状态采集', en: 'Data capture' }, { zh: '模块 PCBA', en: 'Module PCBA' }] },
+  { title: { zh: '充电宝蓝牙小模块', en: 'Power Bank Bluetooth Mini Modules' }, text: { zh: '蓝牙通信、电量采集、状态上报与整机联调。', en: 'Bluetooth communication, battery data collection, status reporting and product-level tuning.' }, tags: [{ zh: '状态采集', en: 'Data capture' }, { zh: '模块 PCBA', en: 'Module PCBA' }] },
   { title: { zh: '定制电子板卡加工', en: 'Custom Electronic Board Assembly' }, text: { zh: 'PCB 制板、SMT 贴片、DIP 焊接、程序烧录与功能测试一体推进。', en: 'PCB fabrication, SMT, DIP soldering, firmware flashing and functional testing in one flow.' }, tags: [{ zh: 'SMT 贴片', en: 'SMT' }, { zh: '批量交付', en: 'Batch delivery' }] }
 ]
 
@@ -264,7 +264,7 @@ onBeforeUnmount(() => observer?.disconnect())
 .company-copy { max-width: 580px; }
 .company-copy p { margin: 0 0 18px; color: var(--muted); font-size: 16px; line-height: 1.9; }
 .company-copy .button { margin-top: 14px; }
-.company-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.company-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: -64px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .company-facts article { min-height: 176px; padding: 26px 24px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .company-facts svg { color: var(--accent-hover); }
 .company-facts h3 { margin: 18px 0 7px; color: var(--ink); font-size: 18px; line-height: 1.3; }
@@ -315,6 +315,7 @@ onBeforeUnmount(() => observer?.disconnect())
 @media (max-width: 1024px) {
   .company-overview { grid-template-columns: 1fr; gap: 42px; }
   .company-copy { max-width: 760px; }
+  .company-facts { margin-top: 0; }
   .business-grid, .culture-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .business-card:nth-child(2), .culture-grid article:nth-child(2) { border-right: 0; }
   .business-card:nth-child(n + 3), .culture-grid article:nth-child(n + 3) { border-top: 1px solid var(--line); }

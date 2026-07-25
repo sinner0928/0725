@@ -40,8 +40,8 @@ onBeforeUnmount(() => {
       <h1>{{ locale === 'en' ? 'PCBA manufacturing and finished product assembly provider.' : 'PCBA 制造与成品组装企业' }}</h1>
       <p>{{ locale === 'en' ? 'Headquartered in Hangzhou, with R&D and production collaboration centers in Shenzhen and Shanghai, YiYuanLi covers keyboard/mouse peripherals, camera remotes, power bank modules and custom PCBA - from prototype sampling to finished product batch shipment.' : '总部位于杭州，深圳、上海设有研发与量产协同中心。围绕键鼠外设、相机遥控器、充电宝模块与定制板卡，提供从 PCBA 打样到成品批量出货的全链路制造服务。' }}</p>
       <div class="hero-actions">
-        <NuxtLink class="button" :to="localePath('/products/detail')">{{ locale === 'en' ? 'View Product Lines' : '查看产品线' }} <ArrowRight :size="17" /></NuxtLink>
-        <NuxtLink class="button button-ghost" :to="localePath('/contact/inquiry')">{{ locale === 'en' ? 'Contact Us' : '联系我们' }} <ArrowRight :size="17" /></NuxtLink>
+        <NuxtLink class="button" :to="localePath('/products')">{{ locale === 'en' ? 'View Product Lines' : '查看产品线' }} <ArrowRight :size="17" /></NuxtLink>
+        <NuxtLink class="button button-ghost" :to="localePath('/contact')">{{ locale === 'en' ? 'Contact Us' : '联系我们' }} <ArrowRight :size="17" /></NuxtLink>
       </div>
       <div class="home-hero-dots" :aria-label="locale === 'en' ? 'Hero slides' : '首页轮播图'">
         <button
